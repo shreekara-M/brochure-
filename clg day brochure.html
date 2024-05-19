@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Day Brochure</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        .brochure {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            width: 90%;
+            margin: 20px;
+            animation: fadeIn 2s;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            animation: slideInDown 1s;
+        }
+        h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .event-details {
+            margin-bottom: 20px;
+        }
+        .event {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: transform 0.3s;
+        }
+        .event h3 {
+            margin-top: 0;
+        }
+        .event:hover {
+            transform: scale(1.05);
+        }
+        .register-btn {
+            background-color: #ff4081;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .register-btn:hover {
+            background-color: #f50057;
+            transform: scale(1.1);
+        }
+        .images img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            transition: opacity 0.3s;
+        }
+        .images img:hover {
+            opacity: 0.8;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideInDown {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="brochure">
+        <h1>College Day 2024</h1>
+        <div class="images">
+            <img src="https://via.placeholder.com/800x400?text=College+Day+Festivities" alt="College Day Festivities">
+            <img src="https://via.placeholder.com/800x400?text=Workshops+and+Events" alt="Workshops and Events">
+        </div>
+        <p>Welcome to our annual College Day celebration! Join us for a day of fun, learning, and unforgettable memories.</p>
+        <div class="event-details">
+            <div class="event">
+                <h2>Main Event</h2>
+                <p>Date: May 25, 2024</p>
+                <p>Time: 10:00 AM - 4:00 PM</p>
+                <p>Location: College Auditorium</p>
+            </div>
+            <div class="event">
+                <h3>Workshops</h3>
+                <p>Various interactive workshops covering topics from technology to arts.</p>
+            </div>
+            <div class="event">
+                <h3>Sports Competitions</h3>
+                <p>Join our sports events and showcase your athletic skills.</p>
+            </div>
+            <div class="event">
+                <h3>Cultural Programs</h3>
+                <p>Enjoy cultural performances including music, dance, and drama.</p>
+            </div>
+        </div>
+        <button class="register-btn">Register Now</button>
+    </div>
+</body>
+</html>
